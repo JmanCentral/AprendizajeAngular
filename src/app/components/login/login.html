@@ -1,0 +1,17 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <h2>Iniciar Sesión</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <label for="username">Usuario</label>
+    <input id="username" formControlName="username" type="text" />
+
+    <label for="ontrasena">Contraseña</label>
+    <input id="contrasena" formControlName="contrasena" type="password" />
+
+    <button type="submit">Iniciar sesión</button>
+  </form>
+
+  <button (click)="onRegister()">Registrarse</button>
+</div>
+
